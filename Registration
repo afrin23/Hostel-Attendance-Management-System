@@ -1,0 +1,20 @@
+# Hostel-Attendance-Management-System
+
+<!DOCTYPE html>
+<html>
+<head>
+      <title> Student Registration</title>
+</head>
+<body>
+      <form action = "register" method ="post">
+{% csrf_token %}
+
+
+<input type ="text" name ="username" placeholder="username"><br>
+<input type ="email" name ="email" placeholder="email"><br>
+<input type ="number" name ="rollno" placeholder="rollno"><br>
+<input type ="password" name ="password1" placeholder="password"><br>
+<input type ="password" name ="password2" placeholder="confirm password"><br>
+<input type = "submit>"
+</html>
+</body>
