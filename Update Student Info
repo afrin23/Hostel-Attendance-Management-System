@@ -1,0 +1,14 @@
+def Update():
+    try:
+        con = mysql.connect(user='mou', password='1234')
+        cur = cur.cursor()
+        sql = "update student set  username='%s', email='%s', rollno='%s, password='%s')" \
+              % ( username.get(), email.get(), rollno.get() ,password.get())
+        cur.execute(sql)
+        con.commit()
+        con.close()
+        messagebox.showinfo('Success Update info ')
+    except:
+        messagebox.showinfo('Error Record')
+    finally:
+        clear()
