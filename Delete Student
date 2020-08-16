@@ -1,0 +1,14 @@
+def Delete():
+    try:
+        con = mysql.connect(user='mou', password='1234')
+        cur = cur.cursor()
+        sql = "delete from student where rollno='%s')" \
+              % (rollno.get())
+        cur.execute(sql)
+        con.commit()
+        con.close()
+        messagebox.showinfo('Successfully  Delete ')
+    except:
+        messagebox.showinfo('Error Record')
+    finally:
+        clear()
